@@ -88,3 +88,4 @@ This repo should reflect that flow rather than inventing infrastructure that doe
 - The current default profile is `alpaca_paper`.
 - `alpaca_live` is gated behind `ALLOW_LIVE=true`.
 - This repo does not include local secrets, runtime logs, or database state.
+- The intended log-export pattern is `dispatcher -> leviathan -> shared SFTP folder`, not direct public exposure of the runtime box.
