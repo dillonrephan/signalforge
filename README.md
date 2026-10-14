@@ -17,7 +17,7 @@ This repo is meant to be source, not a mirror of a live host. Local secrets, log
 
 Primary entry point:
 
-- [`app/service/main.py`](/home/ice/codex/signalforge/app/service/main.py:1)
+- [`app/service/main.py`](app/service/main.py)
 
 Routes:
 
@@ -27,8 +27,8 @@ Routes:
 
 Broker scripts:
 
-- [`app/service/alpaca`](/home/ice/codex/signalforge/app/service/alpaca:1)
-- [`app/service/kraken`](/home/ice/codex/signalforge/app/service/kraken:1)
+- [`app/service/alpaca`](app/service/alpaca)
+- [`app/service/kraken`](app/service/kraken)
 
 ## Environment
 
@@ -38,7 +38,7 @@ The service expects a local `.env` file at:
 
 Start from:
 
-- [app/service/.env.example](/home/ice/codex/signalforge/app/service/.env.example:1)
+- [app/service/.env.example](app/service/.env.example)
 
 Important variables:
 
@@ -73,13 +73,16 @@ python main.py
 
 ## Remote Startup
 
-Current real-world startup flow on the Alpine box is:
+The documented startup flow on the Alpine box is:
 
 1. start the Cloudflare tunnel
 2. activate the Python virtual environment
 3. run `main.py`
 
 This repo should reflect that flow rather than inventing infrastructure that does not exist.
+
+Remote operation was not requalified during repository consolidation. These are
+deployment notes, not a claim that a particular remote host is currently healthy.
 
 ## Notes
 
